@@ -10,10 +10,18 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import Counter from "@/components/Counter.vue";
 import { useCounterStore } from "@/stores/counter";
 const storeCounter = useCounterStore();
+export default {
+  components: { Counter },
+  data() {
+    return {
+      storeCounter,
+    };
+  },
+};
 </script>
 
 

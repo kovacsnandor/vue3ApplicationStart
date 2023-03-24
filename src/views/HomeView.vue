@@ -26,19 +26,21 @@
 
     <div class="d-flex align-items-center">
       <p class="m-0">Edit counter</p>
-      <input type="number" class="form-control my-width-100 ms-3" v-model="storeCounter.count" />
+      <input
+        type="number"
+        class="form-control my-width-100 ms-3"
+        v-model="storeCounter.count"
+      />
     </div>
-
   </div>
-
 </template>
 
 <script setup>
-import Counter from "@/components/Counter.vue";
 import { useCounterStore } from "@/stores/counter";
+import Counter from "@/components/Counter.vue";
 const storeCounter = useCounterStore();
+
 </script>
 
 <style>
-
 </style>
